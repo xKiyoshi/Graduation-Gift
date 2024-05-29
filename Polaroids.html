@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css2/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                   <li><a href="">HOME</a></li>
+                   <li><a href="">PRETTY ROX</a></li>
+                   <li><a href="">US</a></li>
+                   <li><a href="">POLAROIDS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+
+</section>
+
+
+<!-------Polaroids------->
+
+<section class="polaroids">
+    <h1>Our Polaroid Pics!</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="IMAGES/1.JPG" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class="img-gallery-pola">
+    <img src="P/1.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/2.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/3.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/4.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/5.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/6.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/7.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/8.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/9.jpeg" onclick="openFullImg(this.src)">
+
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

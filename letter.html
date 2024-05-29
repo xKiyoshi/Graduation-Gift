@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter</title>
+    <link rel="stylesheet" href="css-envelope-letter-animation-main/stylee.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Bebu.</strong>
+                        <p>
+                            By the time you're reading this, panigurado graduate ka na hehe
+                            CONGRATULATIONS BEBUUU!! tulad ng sinabi ko sayo nung bday mo "sabay
+                            nating tutuparin ang mga pangarap natin" bebu, andito lang ako palagi
+                            kung kailangan mo ng tulong ha, sabay nating itatawid ang college life.
+                            ILOVEYOUUU PALAGI, BEBU KO!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>

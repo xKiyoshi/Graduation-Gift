@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css2/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                   <li><a href="">HOME</a></li>
+                   <li><a href="">PRETTY ROX</a></li>
+                   <li><a href="">US</a></li>
+                   <li><a href="">POLAROIDS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+</section>
+
+
+<!-------Us------->
+
+<section class="pretty-rox">
+    <h1>Our Pictures Together!</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="IMAGES/1.JPG" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class="img-gallery">
+    <img src="US/1.JPG" onclick="openFullImg(this.src)">
+    <img src="US/2.JPG" onclick="openFullImg(this.src)">
+    <img src="US/3.JPG" onclick="openFullImg(this.src)">
+    <img src="US/4.JPG" onclick="openFullImg(this.src)">
+    <img src="US/5.JPG" onclick="openFullImg(this.src)">
+    <img src="US/6.JPG" onclick="openFullImg(this.src)">
+    <img src="US/7.JPG" onclick="openFullImg(this.src)">
+    <img src="US/8.JPG" onclick="openFullImg(this.src)">
+    <img src="US/9.JPG" onclick="openFullImg(this.src)">
+    <img src="US/10.JPG" onclick="openFullImg(this.src)">
+    <img src="US/11.JPG" onclick="openFullImg(this.src)">
+    <img src="US/12.JPG" onclick="openFullImg(this.src)">
+    <img src="US/13.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/14.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/15.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/16.JPG" onclick="openFullImg(this.src)">
+    <img src="US/17.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/18.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/19.jpg" onclick="openFullImg(this.src)">
+    <img src="US/20.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/21.JPEG" onclick="openFullImg(this.src)">
+
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>

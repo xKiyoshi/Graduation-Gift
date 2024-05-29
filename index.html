@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css2/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                 <ul>
+                   <li><a href="index.html">HOME</a></li>
+                   <li><a href="Roxanne.html">PRETTY ROX</a></li>
+                   <li><a href="Rox and Jo.html">US</a></li>
+                   <li><a href="Polaroids.html">POLAROIDS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+<div class="text-box">
+    <h1>FOR ROXANNE'S EYES ONLY</h1>
+    <p>LOVE U TEH</p>
+    <a href="letter.html" class="hero-btn">DO NOT CLICK THIS!</a>
+</div>
+
+
+
+</section>
+
+<!------ Pretty Rox ------>
+
+<section class="pretty-rox">
+    <h1>MY PRETTY ROXANNE!!</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="IMAGES/1.JPG" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class="img-gallery">
+    <img src="IMAGES/1.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/2.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/4.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/5.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/6.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/7.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/8.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/9.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/10.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/11.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/12.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/13.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/14.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/15.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/16.JPG" onclick="openFullImg(this.src)">
+    <img src="IMAGES/17.jpg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/18.jpg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/19.jpg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/20.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/21.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/22.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/23.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/24.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/25.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/26.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/27.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/28.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/29.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/30.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/31.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/32.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/33.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/34.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/35.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/36.jpeg" onclick="openFullImg(this.src)">
+    <img src="IMAGES/37.jpeg" onclick="openFullImg(this.src)">
+    
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+<!-------Us------->
+
+<section class="pretty-rox">
+    <h1>Our Pictures Together!</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="IMAGES/1.JPG" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class="img-gallery">
+    <img src="US/1.JPG" onclick="openFullImg(this.src)">
+    <img src="US/2.JPG" onclick="openFullImg(this.src)">
+    <img src="US/3.JPG" onclick="openFullImg(this.src)">
+    <img src="US/4.JPG" onclick="openFullImg(this.src)">
+    <img src="US/5.JPG" onclick="openFullImg(this.src)">
+    <img src="US/6.JPG" onclick="openFullImg(this.src)">
+    <img src="US/7.JPG" onclick="openFullImg(this.src)">
+    <img src="US/8.JPG" onclick="openFullImg(this.src)">
+    <img src="US/9.JPG" onclick="openFullImg(this.src)">
+    <img src="US/10.JPG" onclick="openFullImg(this.src)">
+    <img src="US/11.JPG" onclick="openFullImg(this.src)">
+    <img src="US/12.JPG" onclick="openFullImg(this.src)">
+    <img src="US/13.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/14.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/15.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/16.JPG" onclick="openFullImg(this.src)">
+    <img src="US/17.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/18.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/19.jpg" onclick="openFullImg(this.src)">
+    <img src="US/20.jpeg" onclick="openFullImg(this.src)">
+    <img src="US/21.JPEG" onclick="openFullImg(this.src)">
+
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+<!-------Polaroids------->
+
+<section class="pretty-rox">
+    <h1>Our Polaroid Pics!</h1>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="IMAGES/1.JPG" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+</div>
+
+<div class="img-gallery-pola">
+    <img src="P/1.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/2.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/3.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/4.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/5.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/6.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/7.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/8.jpeg" onclick="openFullImg(this.src)">
+    <img src="P/9.jpeg" onclick="openFullImg(this.src)">
+
+</div>
+
+<script>
+
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic){
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+    }
+    function closeFullImg(){
+        fullImgBox.style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
